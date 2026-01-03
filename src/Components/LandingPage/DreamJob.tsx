@@ -22,9 +22,32 @@ const DreamJob = () => {
                 <div className="flex gap-3 mt-5 items-center">
                     <TextInput value={jobTitle} onChange={(e)=>setJobTitle(e.currentTarget.value)} className="bg-mine-shaft-900 rounded-lg p-1 px-2 text-mine-shaft-100 [&_input]:!text-mine-shaft-100" variant="unstyled" label="Job Title" placeholder="Software Engineer" />
                     <TextInput value={type} onChange={(e)=>setType(e.currentTarget.value)} className="bg-mine-shaft-900 rounded-lg p-1 px-2 text-mine-shaft-100 [&_input]:!text-mine-shaft-100" variant="unstyled" label="Job Type" placeholder="Fulltime" />
-                    <div className="flex items-center justify-center h-full w-20 bg-[#ff2808] text-mine-shaft-100 rounded-lg p-2 hover:bg-bright-sun-500 cursor-pointer">
-                        <IconSearch onClick={handleClick} className="h-[85%] w-[85%]" />
-                    </div>
+    <button
+     type="button"
+     onClick={handleClick}
+     className="relative flex items-center justify-center
+             h-full w-20
+             bg-[#ff2808]
+             text-mine-shaft-100
+             rounded-lg p-2
+             border-2 border-solid border-white
+             shadow-inner
+             hover:bg-bright-sun-500
+             transition-all duration-200
+             cursor-pointer"
+>
+     <span className="absolute inset-0 rounded-lg
+                   border-2
+                   border-t-[#fde047]
+                   border-r-[#22c55e]
+                   border-b-[#60a5fa]
+                   border-l-[#f472b6]"></span>
+
+  <IconSearch className="h-[85%] w-[85%] relative z-10" />
+</button>
+
+
+
                 </div>
             </div>
             <div data-aos="zoom-out-left"  className="w-[55%] sm-mx:w-full flex items-center justify-center">
