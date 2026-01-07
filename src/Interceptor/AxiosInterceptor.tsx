@@ -3,7 +3,7 @@ import { removeUser } from "../Slices/UserSlice";
 import { removeJwt } from "../Slices/JwtSlice";
 
 const axiosInstance = axios.create({
-    baseURL: 'https://vrittisetu-5.onrender.com/'
+    baseURL: 'https://vrittisetu-5.onrender.com'
 });
 
 axiosInstance.interceptors.request.use(
